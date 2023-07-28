@@ -1,6 +1,8 @@
-ARG PHP_VERSION=8.1.18
+ARG PHP_VERSION=8.2
 
 FROM php:$PHP_VERSION-fpm-alpine
+
+RUN apk --no-cache update && apk upgrade openssl curl
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 

@@ -1,5 +1,7 @@
 ## PHP-FPM Docker image
 
 #### Changelog
-- **v1.0.0**
-    - first version, that supports only parametrized `PHP_VERSION`
+- **v8.2**
+    - using PHP v`8.2`
+    - fixed vulnerability of `openssl`, `curl` from Alpine base image
+    - added `Makefile`
