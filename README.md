@@ -6,12 +6,12 @@
 #### Usage
 - Build:
     ```bash
-    docker build .  --build-arg PHP_VERSION=8.2  -t google85/php-fpm:8.2
+    make build
     ```
 
 - Push to Dockerhub:
     ```bash
-    docker push google85/php-fpm:8.2
+    make push
     ```
 
 - That's it!
